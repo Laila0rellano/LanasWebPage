@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* 🔹 Contenedor de la imagen del álbum */
+.album-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 🔹 Imagen dentro del contenedor */
+.image-container {
+    width: 79%; /* Ajusta el tamaño de la imagen */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 100%; /* La imagen ocupa el 100% del contenedor */
+    height: auto;
+    max-height: 100%; /* No se sale del contenedor */
+    object-fit:cover;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.contact-options a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.contact-options a:hover {
+    color: #ffcc00;
+}

@@ -1,0 +1,140 @@
+/* Importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@100;400;700&display=swap');
+
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #141414, #1a1a1a);
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.animated-btn {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+    border-radius: 10px;
+}
+
+.animated-btn:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Sección principal */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-bottom: 4px solid white;
+}
+
+.hero h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Bento Grid */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.contact-options a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.contact-options a:hover {
+    color: #ffcc00;
+}
+
+.bento-discografia {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta el tamaño de las columnas */
+    gap: 16px; /* Espacio entre los elementos */
+    padding: 16px;
+  }
+  
+  .bento-item-discografia {
+    display: block; /* Hace que los enlaces ocupen todo el espacio del grid */
+    border-radius: 8px;
+    overflow: hidden; /* Evita que la imagen sobresalga */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .bento-item-discografia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene las imágenes cuadradas sin deformarse */
+    border-radius: 8px;
+  }
+  
+  .bento-item-discografia:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  }
+  
